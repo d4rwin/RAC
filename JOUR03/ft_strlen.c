@@ -13,7 +13,7 @@ int		ft_strlen(char *str)
 	a = 0;
 	b = 0;
 
-	while (str[i])
+	while (str[a])
 	{
 		a++;
 		b++;

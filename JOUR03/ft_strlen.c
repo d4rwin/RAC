@@ -7,18 +7,18 @@ void	ft_putchar(char c)
 
 int		ft_strlen(char *str)
 {
-	int i;
-	int j;
+	int a;
+	int b;
 
-	i = 0;
-	j = 0;
+	a = 0;
+	b = 0;
 
 	while (str[i])
 	{
-		i++;
-		j++;
+		a++;
+		b++;
 	}
-	return (j);
+	return (b);
 }
 
 int main()

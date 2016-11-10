@@ -25,7 +25,7 @@ char    *ft_strrev(char *str)
 
 int     main()
 {
-        char    str1[] = "Hello World !";
+        char    str1[] = "Hola que tal";
  
         printf("%s\n", ft_strrev(str1));
         return (0);

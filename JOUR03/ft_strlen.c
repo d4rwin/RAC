@@ -27,7 +27,6 @@ int main()
 	int i;
 
 	i = 0;
-	// ft_putstr(str);
 	i = ft_strlen(str);
 	ft_putchar(i +'0');
 	ft_putchar('\n');

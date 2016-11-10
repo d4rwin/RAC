@@ -1,5 +1,9 @@
-#include <unistd.h>
+// #include <unistd.h>
 #include <stdio.h>
+// void	ft_putchar(char c)
+// {
+// 	write(1, &c, 1);
+// }
 char    *ft_strrev(char *str)
 {
         int i;
@@ -24,8 +28,10 @@ char    *ft_strrev(char *str)
 
 int     main()
 {
-        char    str1[] = "Hola que tal";
+        char    str[15] = "Hola que tal";
  
-        printf("%s\n", ft_strrev(str1));
+        // putchar(ft_strrev(str));
+        // ft_putchar("\n");
+        printf("%s\n", ft_strrev(str));
         return (0);
 }

@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>	
 
 int		ft_atoi(char *str)
 {
@@ -29,7 +29,7 @@ int		ft_atoi(char *str)
 		return (nbr);
 }
 
-int		main(void
+int		main(void)
 {
 	int 	i;
 	char	str[4] = "24e";

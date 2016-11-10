@@ -11,7 +11,6 @@ char    *ft_strrev(char *str)
         while (str[i] != '\0')
                 i++;
         i = i - 1;
-        // while (j < i/2)
         while (i > j)	
         {
                 tmp = str[i];

@@ -52,8 +52,8 @@ int			ft_iterative_factorial(int nb)
 
 int        main()
 {
-    
-    int i = 6;
+    int i;
+    i = 10;
     i = ft_iterative_factorial(i);
     ft_putnbr (i);
 

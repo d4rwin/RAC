@@ -1,5 +1,5 @@
 #include <unistd.h>
-
+#include <stdio.h>
 void	ft_putchar(char c)
 {
 	write (1 , &c, 1);
@@ -18,41 +18,47 @@ void	ft_putnbr(int nb)
 		ft_putnbr(nb % 10);
 	}
 	if (nb < 10)
-		ft_putchar(nb + 49);
+		ft_putchar(nb + '0');
 }
 
-int		ft_interative_factorial(int nb)
-{
-	int out;
 
-	out = nb;
-	
+int			ft_iterative_factorial(int nb)
+{
+	int		facteur;
+
+	facteur = nb;
+	if (nb < 0 || nb > 12)
+		return 0;
 	if (nb == 0)
-		return (1);
-	while (nb)
-	{
-		out = out * (nb - 1);
-		nb--;
-	}
-	return (out);
+		return 0;
+	else
+
+	
+		while (nb  > 1)
+		{
+			nb--;
+			// nb = nb - 1;
+			facteur = facteur * nb;
+			
+					// printf("%d\n", facteur);
+					// printf("%d\n", nb);
+
+
+		}
+		return (facteur);
+		// printf("%d\n", facteur);
+	
 }
 
-int	main ()
+int        main()
 {
-	int i = 71  ;
-	ft_putnbr(i);
-	ft_putchar(' ');
-	ft_putnbr(ft_interative_factorial(i));
-	ft_putchar('\n');
-	return 0;
+    
+    int i = 6;
+    i = ft_iterative_factorial(i);
+    ft_putnbr (i);
+
+    // printf("%d\n", i);
+    ft_putchar('\n');
+
+    return (0);
 }
-
-// int main()
-// {
-// 	int i;
-
-// 	i = 0;
-// 	while (i != 10)
-// 		test(i++);
-// 	return 0;
-// }

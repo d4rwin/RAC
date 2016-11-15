@@ -20,25 +20,20 @@ void	ft_putnbr(int nb)
 		ft_putchar(nb + '0');
 }
 
-int		ft_iterative_power(int nb, int power)
+int			ft_fibonacci(int index)
 {
-	int	i;
-	int	p;
-
-	i = 0;
-	p = nb;
-	if (power < 0)
-	{return (0);}
-	while (++i < power)  /* i++ donne un mauvais resultat */
-		p = p * nb;
-	return (p);
+	if (index < 0)
+		return (-1);
+	else if (index <= 1)
+		return (index);
+	else
+		return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
 }
 
 int		main ()
 {
-	int i = 5;
-	int p = 3;
-	ft_putnbr(ft_iterative_power(i, p));
+	int i = 8;
+	ft_putnbr(ft_fibonacci(i));
 	ft_putchar('\n');
 	return 0;
 }

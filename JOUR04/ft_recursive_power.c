@@ -20,25 +20,19 @@ void	ft_putnbr(int nb)
 		ft_putchar(nb + '0');
 }
 
-int		ft_iterative_power(int nb, int power)
+int			ft_recursive_power(int nb, int power)
 {
-	int	i;
-	int	p;
-
-	i = 0;
-	p = nb;
-	if (power < 0)
-	{return (0);}
-	while (++i < power)  /* i++ donne un mauvais resultat */
-		p = p * nb;
-	return (p);
+	if (power >= 2)
+		return (nb * ft_recursive_power(nb, power - 1));
+	else
+		return (nb);
 }
 
 int		main ()
 {
 	int i = 5;
 	int p = 3;
-	ft_putnbr(ft_iterative_power(i, p));
+	ft_putnbr(ft_recursive_power(i, p));
 	ft_putchar('\n');
 	return 0;
 }

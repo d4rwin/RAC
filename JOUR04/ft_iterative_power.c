@@ -28,7 +28,7 @@ int		ft_iterative_power(int nb, int power)
 	i = 0;
 	p = nb;
 	if (power < 0)
-	{return (0);}
+		return (0);
 	while (++i < power)  /* i++ donne un mauvais resultat */
 		p = p * nb;
 	return (p);

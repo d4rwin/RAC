@@ -27,33 +27,28 @@ int			ft_iterative_factorial(int nb)
 	int		facteur;
 
 	facteur = nb;
-	if (nb < 0 || nb > 12)
+	if (nb <= 0 || nb > 12)
 		return 0;
-	if (nb == 0)
-		return 0;
-	else
-
-	
-		while (nb  > 1)
-		{
-			nb--;
-			// nb = nb - 1;
-			facteur = facteur * nb;
-			
-					// printf("%d\n", facteur);
-					// printf("%d\n", nb);
+	while (nb  > 1)
+	{
+		nb--;
+		// nb = nb - 1;
+		facteur = facteur * nb;
+		
+				// printf("%d\n", facteur);
+				// printf("%d\n", nb);
 
 
-		}
-		return (facteur);
-		// printf("%d\n", facteur);
+	}
+	return (facteur);
+	// printf("%d\n", facteur);
 	
 }
 
 int        main()
 {
     int i;
-    i = 10;
+    i = 5;
     i = ft_iterative_factorial(i);
     ft_putnbr (i);
 

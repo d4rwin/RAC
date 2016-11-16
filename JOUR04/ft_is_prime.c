@@ -1,5 +1,4 @@
 #include <unistd.h>
-
 void	ft_putchar(char c)
 {
 	write (1 , &c, 1);
@@ -38,22 +37,11 @@ int		ft_is_prime(int nb)
 	return (1);
 }
 
-// void	test(int nb)
-// {
-// 	int put;
-
-// 	put = ft_is_prime(nb);
-// 	if (put)
-// 	{
-// 		ft_putnbr(nb);
-// 		ft_putchar('\n');
-// 	}
-// }
 
 int		main()
 {
-	int i = 27;
-	printf(ft_is_prime(i));
+	int i = 11;
+	ft_putnbr(ft_is_prime(i));
 	ft_putchar('\n');
 
 	return (0);

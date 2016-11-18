@@ -7,40 +7,26 @@
 
 
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, const char *src)
 {
-	char	*t;
-
-	t = dest;
-	while ((*t++ = *src++) != 0);
+	
+	while 	((*dest++ = *src++) != 0); 
 	return (dest);
 }
+
 int main()
 {
-   char src[40];
-   char dest[100];
-  
-   ft_strcpy(src, "This is tutorialspoint.com");
+   char src[12] = {"pouet pouet"};
+   char dest[12];
+     
+   
+   printf("original : %s\n", src);
    ft_strcpy(dest, src);
 
-   printf("Final copied string : %s\n", dest);
-   
+   printf("copie : %s\n", dest);
+   printf("rien %c\n", src[8]);
+   printf("rien %c\n",dest[8]);
+  
    return(0);
 }
 
-
-// int main()
-// {
-// 	char str[15] = {'d', 'e', 'b', 'u', 't', '\0'};
-// 	char add[] = {'\n', 'f', 'i', 'n','\0'};
-
-// 	ft_putstr(str);
-// 		ft_putchar('\n');
-
-// 	ft_putstr(ft_strcpy(str, add));
-// 	ft_putchar('\n');
-// 	ft_putstr(strcpy(str, add));
-// 	ft_putchar('\n');
-
-// 	return 0;
-// }

@@ -1,3 +1,4 @@
+#include <stdio.h>
 char	*ft_strstr(char *str, char *to_find)
 {
 	int i;
@@ -22,5 +23,16 @@ char	*ft_strstr(char *str, char *to_find)
 		pos = 0;
 		i++;
 	}
+	return (0);
+}
+
+int main()
+{
+	char str_src[]	= "Helloa";
+	char str_find[]	= "lo";
+
+	printf("Text: %s ", ft_strstr(str_src, str_find));
+	printf("src: %s ", str_src);
+	printf("Search: %s ",  str_find);
 	return (0);
 }

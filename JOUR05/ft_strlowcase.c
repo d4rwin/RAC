@@ -15,7 +15,7 @@ char *ft_strlowcase(char *str)
 }
 
 
-int main(void)
+int main()
 {
 	char str1[] = "PHRAsE TeSt 12345!";
 	printf("Original: %s ", str1);

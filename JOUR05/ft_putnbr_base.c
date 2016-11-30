@@ -16,13 +16,13 @@ void		ft_putnbr_base(int nb, char *base)
 
 	else
 	{
-		ft_putchar(base[nb]);
+
 	}
 }
 
 int main ()
 {
-	ft_putnbr_base(5, 2);
-	// printf("%s\n", 	ft_putnbr_base(5, "0"));
+	ft_putnbr_base( );
+	// printf("%s\n", 	ft_putnbr_base
 	return (0);
 }

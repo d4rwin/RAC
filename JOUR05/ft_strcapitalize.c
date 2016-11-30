@@ -7,7 +7,10 @@ char *ft_strcapitalize(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if ((str[i-1] == ' ' && (str[i] >= 'A' && str[i] <= 'z'))|| i == 0) /*||(str[i-1] == */
+		if ((str[i-1] == ' '
+			&& (str[i] >= 'A'
+			&& str[i] <= 'z'))
+			|| i == 0) /*||(str[i-1] != */
 			str[i] -= 32;
 		i++;
 	}

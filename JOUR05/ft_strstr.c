@@ -28,8 +28,8 @@ char	*ft_strstr(char *str, char *to_find)
 
 int main()
 {
-	char str_src[]	= "Helloa";
-	char str_find[]	= "lo";
+	char str_src[]	= "Hello";
+	char str_find[]	= "i";
 
 	printf("Text: %s ", ft_strstr(str_src, str_find));
 	printf("src: %s ", str_src);
